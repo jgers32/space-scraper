@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper Results</title>
+</head>
+<body>
+    <h1>Web Scraper Results</h1>
+    <?php
+    // Include the scraper script
+    require 'scraper.php';
+    
+    // Output the scraped data within HTML tags
+    foreach ($data as $item) {
+        echo '<p>' . $item->plaintext . '</p>';
+    }
+    ?>
+</body>
+</html>
